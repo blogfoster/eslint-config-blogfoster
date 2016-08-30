@@ -18,6 +18,7 @@ module.exports = {
     'func-names': 0,
     'no-underscore-dangle': 0,
     curly: [ 2, 'all' ],
-    'newline-per-chained-call': 0
+    'newline-per-chained-call': 0,
+    'import/named': 2
   }
 };
