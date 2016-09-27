@@ -6,8 +6,8 @@ module.exports = {
     mocha: true
   },
   rules: {
-    'prefer-arrow-callback': 0,
-    'arrow-body-style': 0,
+    'prefer-arrow-callback': [ 1, { allowNamedFunctions: true, allowUnboundThis: false } ],
+    'arrow-body-style': [ 1, 'as-needed' ],
     'array-bracket-spacing': [ 2, 'always' ],
     'comma-dangle': [ 2, 'never' ],
     'space-before-function-paren': [ 2, { anonymous: 'always', named: 'never' } ],
@@ -19,6 +19,8 @@ module.exports = {
     'no-underscore-dangle': 0,
     curly: [ 2, 'all' ],
     'newline-per-chained-call': 0,
-    'import/named': 2
+    'import/named': 2,
+    'import/no-extraneous-dependencies': [ 2, { devDependencies: true } ],
+    'import/prefer-default-export': [ 1 ]
   }
 };
