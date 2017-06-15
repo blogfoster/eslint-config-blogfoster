@@ -7,10 +7,7 @@
     "eslint": "eslint .",
     "test": "npm run eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blogfoster/eslint-config-blogfoster.git"
-  },
+  "repository": "blogfoster/eslint-config-blogfoster",
   "keywords": [
     "eslint"
   ],
@@ -21,15 +18,15 @@
   },
   "homepage": "https://github.com/blogfoster/eslint-config-blogfoster#readme",
   "dependencies": {
-    "babel-eslint": "^7.1.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "babel-eslint": "^7.2.3",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-mocha": "^4.9.0",
-    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-react": "^7.1.0",
     "estraverse-fb": "^1.3.1"
   },
   "devDependencies": {
-    "eslint": "^3.10.2"
+    "eslint": "^4.0.0"
   }
 }
