@@ -1,6 +1,7 @@
 {
   "extends": [
     "./index.js",
-    "./react.js"
+    "./react.js",
+    "prettier"
   ]
 }
