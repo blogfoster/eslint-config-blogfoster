@@ -3,6 +3,7 @@ module.exports = {
     'eslint-config-airbnb',
     require.resolve('./rules/default'),
     require.resolve('./rules/react'),
+    'prettier',
   ],
   rules: {},
 };
