@@ -1,29 +1,32 @@
 module.exports = {
   parser: 'babel-eslint',
-  plugins: [ 'mocha' ],
+  plugins: ['mocha'],
   env: {
     es6: true,
     node: true,
-    mocha: true
+    mocha: true,
   },
   rules: {
-    'prefer-arrow-callback': [ 1, { allowNamedFunctions: true, allowUnboundThis: false } ],
-    'arrow-body-style': [ 0 ],
-    'array-bracket-spacing': [ 2, 'always' ],
-    'comma-dangle': [ 2, 'never' ],
-    'space-before-function-paren': [ 2, { anonymous: 'always', named: 'never' } ],
-    'object-curly-spacing': [ 2, 'always' ],
-    'max-len': [ 1, 120, 2, { ignoreComments: true } ],
+    'prefer-arrow-callback': [
+      1,
+      { allowNamedFunctions: true, allowUnboundThis: false },
+    ],
+    'arrow-body-style': [0],
+    'array-bracket-spacing': [2, 'always'],
+    'comma-dangle': [2, 'never'],
+    'space-before-function-paren': [2, { anonymous: 'always', named: 'never' }],
+    'object-curly-spacing': [2, 'always'],
+    'max-len': [1, 120, 2, { ignoreComments: true }],
     'no-shadow': 0,
     'no-param-reassign': 0,
     'func-names': 0,
     'no-underscore-dangle': 0,
-    curly: [ 2, 'all' ],
+    curly: [2, 'all'],
     'newline-per-chained-call': 0,
     'no-return-assign': 0,
     'import/named': 2,
-    'import/no-extraneous-dependencies': [ 2, { devDependencies: true } ],
-    'import/prefer-default-export': [ 1 ],
-    'mocha/no-exclusive-tests': 'error'
-  }
+    'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+    'import/prefer-default-export': [1],
+    'mocha/no-exclusive-tests': 'error',
+  },
 };

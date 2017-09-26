@@ -1,13 +1,11 @@
 module.exports = {
   parser: 'babel-eslint',
   env: {
-    browser: true
+    browser: true,
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   ecmaFeatures: {
-    jsx: true
+    jsx: true,
   },
   rules: {
     'react/display-name': 0,
@@ -24,7 +22,7 @@ module.exports = {
     'react/react-in-jsx-scope': 2,
     'react/self-closing-comp': 2,
     'react/jsx-wrap-multilines': 2,
-    'react/jsx-no-bind': [ 2, { ignoreRefs: true } ],
-    'react/jsx-filename-extension': 0
-  }
+    'react/jsx-no-bind': [2, { ignoreRefs: true }],
+    'react/jsx-filename-extension': 0,
+  },
 };

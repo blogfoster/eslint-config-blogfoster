@@ -9,9 +9,7 @@
     "prettier": "prettier --config .prettierrc '**/*.{js,json}'"
   },
   "repository": "blogfoster/eslint-config-blogfoster",
-  "keywords": [
-    "eslint"
-  ],
+  "keywords": ["eslint"],
   "author": "blogfoster GmbH",
   "license": "ISC",
   "bugs": {
