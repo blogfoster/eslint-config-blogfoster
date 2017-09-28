@@ -1,30 +1,25 @@
 module.exports = {
   parser: 'babel-eslint',
   env: {
-    browser: true
+    browser: true,
   },
-  plugins: [
-    'react'
-  ],
-  ecmaFeatures: {
-    jsx: true
-  },
+  plugins: ['react'],
   rules: {
-    'react/display-name': 0,
-    'react/jsx-boolean-value': 2,
-    'react/jsx-no-undef': 2,
-    'react/jsx-sort-props': 0,
-    'react/jsx-uses-react': 2,
-    'react/jsx-uses-vars': 2,
-    'react/no-did-mount-set-state': 2,
-    'react/no-did-update-set-state': 2,
-    'react/no-multi-comp': 0,
-    'react/no-unknown-property': 2,
-    'react/prop-types': 2,
-    'react/react-in-jsx-scope': 2,
-    'react/self-closing-comp': 2,
-    'react/jsx-wrap-multilines': 2,
-    'react/jsx-no-bind': [ 2, { ignoreRefs: true } ],
-    'react/jsx-filename-extension': 0
-  }
+    'react/display-name': 'off',
+    'react/jsx-boolean-value': 'error',
+    'react/jsx-no-undef': 'error',
+    'react/jsx-sort-props': 'off',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/no-did-mount-set-state': 'error',
+    'react/no-did-update-set-state': 'error',
+    'react/no-multi-comp': 'off',
+    'react/no-unknown-property': 'error',
+    'react/prop-types': 'error',
+    'react/react-in-jsx-scope': 'error',
+    'react/self-closing-comp': 'error',
+    'react/jsx-wrap-multilines': 'error',
+    'react/jsx-no-bind': ['error', { ignoreRefs: true }],
+    'react/jsx-filename-extension': 'off',
+  },
 };
