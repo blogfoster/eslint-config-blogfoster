@@ -1,29 +1,34 @@
 module.exports = {
   parser: 'babel-eslint',
-  plugins: [ 'mocha' ],
+  plugins: ['mocha'],
   env: {
     es6: true,
     node: true,
-    mocha: true
+    mocha: true,
   },
   rules: {
-    'prefer-arrow-callback': [ 1, { allowNamedFunctions: true, allowUnboundThis: false } ],
-    'arrow-body-style': [ 0 ],
-    'array-bracket-spacing': [ 2, 'always' ],
-    'comma-dangle': [ 2, 'never' ],
-    'space-before-function-paren': [ 2, { anonymous: 'always', named: 'never' } ],
-    'object-curly-spacing': [ 2, 'always' ],
-    'max-len': [ 1, 120, 2, { ignoreComments: true } ],
-    'no-shadow': 0,
-    'no-param-reassign': 0,
-    'func-names': 0,
-    'no-underscore-dangle': 0,
-    curly: [ 2, 'all' ],
-    'newline-per-chained-call': 0,
-    'no-return-assign': 0,
-    'import/named': 2,
-    'import/no-extraneous-dependencies': [ 2, { devDependencies: true } ],
-    'import/prefer-default-export': [ 1 ],
-    'mocha/no-exclusive-tests': 'error'
-  }
+    // turned off rules
+    'no-shadow': 'off',
+    'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
+    'func-names': 'off',
+    'class-methods-use-this': 'off',
+
+    // warnings
+    'prefer-arrow-callback': [
+      'warn',
+      { allowNamedFunctions: true, allowUnboundThis: false },
+    ],
+
+    // errors
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'mocha/no-exclusive-tests': 'error',
+    'no-console': 'error',
+    'import/named': 'error',
+    curly: ['error', 'all'],
+    'arrow-parens': ['error', 'as-needed'],
+    'arrow-body-style': ['error', 'as-needed'],
+    'func-style': ['error', 'expression'],
+  },
 };
