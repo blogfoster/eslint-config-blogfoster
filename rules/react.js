@@ -81,13 +81,7 @@ module.exports = {
     'jsx-a11y/href-no-hash': 'off',
 
     // warnings
-    'react/jsx-no-bind': ['warn', { ignoreRefs: true }],
-    'react/no-array-index-key': 'warn',
-    'jsx-a11y/no-autofocus': 'warn',
-    'jsx-a11y/interactive-supports-focus': 'warn',
-    'jsx-a11y/no-noninteractive-element-interactions': 'warn',
-    'jsx-a11y/label-has-for': 'warn',
-    'jsx-a11y/iframe-has-title': 'warn',
+    // -> we don't want warnings
 
     // errors
     'no-alert': 'error',
@@ -105,5 +99,10 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/jsx-wrap-multilines': 'error',
     'react/no-unescaped-entities': ['error', { forbid: ['>', '}'] }],
+    'react/jsx-no-bind': ['error', { allowArrowFunctions: true }],
+    'jsx-a11y/label-has-for': [
+      'error',
+      { required: { some: ['nesting', 'id'] } },
+    ],
   },
 };
