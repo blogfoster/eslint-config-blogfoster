@@ -6,7 +6,8 @@
   "scripts": {
     "eslint": "eslint .",
     "prettier": "prettier --config .prettierrc.js '**/*.{js,json}'",
-    "check": "npm run prettier -- --list-different && npm run eslint --cache --cache-location node_modules/.cache/eslintcache"
+    "check": "npm run prettier -- --list-different && npm run eslint --cache --cache-location node_modules/.cache/eslintcache",
+    "test": "echo package has no tests"
   },
   "repository": "blogfoster/eslint-config-blogfoster",
   "keywords": [
