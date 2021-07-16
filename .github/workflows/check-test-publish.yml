@@ -1,9 +1,13 @@
 name: Check, Test & Publish
 
+# on:
+#   push:
+#     tags:
+#       - '*'
+
 on:
-  push:
-    tags:
-      - '*'
+  release:
+    types: [created]
 
 jobs:
   publish:
@@ -37,4 +41,3 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: ${{ github.event.release.tag_name }}
-          access: public
