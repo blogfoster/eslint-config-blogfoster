@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-blogfoster",
-  "version": "1.11.10",
+  "version": "2.0.0",
   "description": "blogfoster specific eslint rules",
   "main": "index.js",
   "scripts": {
