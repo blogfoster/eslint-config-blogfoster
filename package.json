@@ -21,19 +21,19 @@
   "homepage": "https://github.com/blogfoster/eslint-config-blogfoster#readme",
   "dependencies": {
     "babel-eslint": "^8.2.3",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-mocha": "^5.0.0",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-react": "^7.30.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "prettier": "^1.12.1"
+    "eslint": "^8.21.0",
+    "prettier": "^2.7.1"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^8.21.0"
   },
   "engines": {
     "node": "^8.9.0"
