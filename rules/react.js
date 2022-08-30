@@ -78,13 +78,14 @@ module.exports = {
     'react/no-multi-comp': 'off',
     'react/require-default-props': 'off',
     'react/no-danger': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
 
     // warnings
-    // -> we don't want warnings
+    'react/destructuring-assignment': 'warning',
 
     // errors
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
