@@ -85,7 +85,7 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 'off',
 
     // warnings
-    'react/destructuring-assignment': 'warning',
+    'react/destructuring-assignment': 'warn',
 
     // errors
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
